@@ -1,6 +1,15 @@
 const taskApiUrl = "https://script.google.com/macros/s/AKfycbxvLbA_UIGEdxnr0VaPny6qwsIsnT1tPJvRaSt_DdM6-P5ncwjwXKTpHrIJNkDcwwUd4A/exec";
 
-async function addFoodToList(foodName) {
+
+function readFromUrl() {
+  let params = new URLSearchParams(window.location.search);
+  let foodName = params.get('foodName');
+  if(foodName) {
+    addFoodToList(foodName);
+  }
+}
+
+function addFoodToList(foodName) {
   fetch(`${taskApiUrl}?foodName=${foodName}`).then(response => {
     document.querySelector('.results').innerHTML = response;
   });
@@ -17,5 +26,10 @@ async function updateTag() {
     console.error("API error", e);
   }
 }
+
+window.onload = () => {
+  readFromUrl();
+};
+
 // Poll the ESP32 every 500ms for fresh scans
 // setInterval(updateTag, 5000);
