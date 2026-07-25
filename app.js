@@ -43,18 +43,21 @@ function readFromUrl() {
   }
 }
 
-function setResults(text, add = false) {
+function setResults(text, category, add = false) {
   const resultDiv = document.querySelector('.results');
   resultDiv.classList.remove('success');
+  resultDiv.classList.remove('info');
+  resultDiv.classList.remove('error');
+  resultDiv.classList.remove('warning');
+
   if (add) {
     resultDiv.innerHTML += text;
   }
   else {
     resultDiv.innerHTML = text;
   }
-  if (text.startsWith('Added food')) {
-    resultDiv.classList.add('success');
-  }
+  resultDiv.classList.add(category);
+  
 }
 
 function addFoodToList(foodName) {
@@ -66,12 +69,32 @@ function addFoodToList(foodName) {
       return response.text();
     })
     .then((text) => {
-      setResults(text);
+      if(text.startsWith('Already on list')) {
+        setResults(text, 'warning');
+      } else {
+        setResults(text, 'success');
+      }
+      
       deduplicateCards();
     })
     .catch((error) => {
-      setResults(error);
+      setResults(error, 'error');
     });
+}
+
+function handleFoodFormSubmit(event) {
+  event.preventDefault();
+  const input = document.getElementById('food-name');
+  const foodName = input?.value?.trim();
+
+  if (!foodName) {
+    setResults('Please enter a food name.');
+    return;
+  }
+
+  setResults('Adding food...');
+  addFoodToList(foodName);
+  input.value = '';
 }
 
 function sortCardsByFrequency(items) {
@@ -144,9 +167,15 @@ async function updateTag() {
 }
 
 window.onload = () => {
+  setResults('Scan a tag, enter a custom food, or click an icon below to add to the list.', 'info');
   deduplicateCards();
   readFromUrl();
   loadFrequencyData();
+
+  const foodForm = document.getElementById('food-form');
+  if (foodForm) {
+    foodForm.addEventListener('submit', handleFoodFormSubmit);
+  }
 };
 
 // Poll the ESP32 every 500ms for fresh scans

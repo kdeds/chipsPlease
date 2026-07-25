@@ -3,14 +3,22 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <title>Chips Please!</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kdeds/chipsPlease@latest/css/styles.css">
+  <!-- <link rel="stylesheet" href="/css/styles.css"> -->
 </head>
 
 <body>
   <div class="main">
+    <h1>Chips, Please!</h1>
     <div class="results">
     </div>
+    <form class="food-form" id="food-form">
+      <input type="text" id="food-name" name="foodName" placeholder="Enter a food" required>
+      <button type="submit">Add food</button>
+    </form>
+    <hr />
     <div class="menu">
       <div class="card">
         <a href="/?foodName=Little%20bites%20muffins"><img src="https://cdn.jsdelivr.net/gh/kdeds/chipsPlease@main/snack-images/little-bites.png"
