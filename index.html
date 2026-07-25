@@ -1,17 +1,323 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <title>Chips Please!</title>
-  <style>
-
-  </style>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kdeds/chipsPlease@latest/css/styles.css">
 </head>
+
 <body>
   <div class="main">
-    <div class="result"></div>
+    <div class="results">
+    </div>
+    <div class="menu">
+      <div class="card">
+        <a href="/?foodName=Little%20bites%20muffins"><img src="https://cdn.jsdelivr.net/gh/kdeds/chipsPlease@main/snack-images/little-bites.png"
+            alt="Little bites muffins"></a>
+        <h3>Little bites muffins</h3>
+      </div>
+      <div class="card">
+        <a href="/?foodName=Chewy%20dipps"><img src="https://cdn.jsdelivr.net/gh/kdeds/chipsPlease@main/snack-images/chewy-dipps.png" alt="Chewy dipps"></a>
+        <h3>Chewy dipps</h3>
+      </div>
+      <div class="card">
+        <a href="/?foodName=Mini%20chips%20ahoy"><img src="https://cdn.jsdelivr.net/gh/kdeds/chipsPlease@main/snack-images/mini-chips-ahoy.png" alt="Mini chips ahoy"></a>
+        <h3>Mini chips ahoy</h3>
+      </div>
+      <div class="card">
+        <a href="/?foodName=Fruit%20by%20the%20foot%20%28berry%29"><img src="https://cdn.jsdelivr.net/gh/kdeds/chipsPlease@main/snack-images/fruit-by-the-foot.png"
+            alt="Fruit by the foot (berry)"></a>
+        <h3>Fruit by the foot (berry)</h3>
+      </div>
+      <div class="card">
+        <a href="/?foodName=Cheez-its"><img src="https://cdn.jsdelivr.net/gh/kdeds/chipsPlease@main/snack-images/cheez-its.png" alt="Cheez-its"></a>
+        <h3>Cheez-its</h3>
+      </div>
+      <div class="card">
+        <a href="/?foodName=Hello%20panda"><img src="https://cdn.jsdelivr.net/gh/kdeds/chipsPlease@main/snack-images/hello-panda.png" alt="Hello panda"></a>
+        <h3>Hello panda</h3>
+      </div>
+      <div class="card">
+        <a href="/?foodName=Lays"><img src="https://cdn.jsdelivr.net/gh/kdeds/chipsPlease@main/snack-images/lays.png" alt="Lays"></a>
+        <h3>Lays</h3>
+      </div>
+      <div class="card">
+        <a href="/?foodName=Sun%20chips"><img src="https://cdn.jsdelivr.net/gh/kdeds/chipsPlease@main/snack-images/sun-chips.png" alt="Sun chips"></a>
+        <h3>Sun chips</h3>
+      </div>
+      <div class="card">
+        <a href="/?foodName=Gushers"><img src="https://cdn.jsdelivr.net/gh/kdeds/chipsPlease@main/snack-images/gushers.png" alt="Gushers"></a>
+        <h3>Gushers</h3>
+      </div>
+      <div class="card">
+        <a href="/?foodName=Pringles%20%28original%29"><img src="https://cdn.jsdelivr.net/gh/kdeds/chipsPlease@main/snack-images/pringles-original.png"
+            alt="Pringles (original)"></a>
+        <h3>Pringles (original)</h3>
+      </div>
+      <div class="card">
+        <a href="/?foodName=Cheetos%20%28white%20cheddar%29"><img src="https://cdn.jsdelivr.net/gh/kdeds/chipsPlease@main/snack-images/cheetos-white-cheddar-puffs.png"
+            alt="Cheetos (white cheddar)"></a>
+        <h3>Cheetos (white cheddar)</h3>
+      </div>
+      <div class="card">
+        <a href="/?foodName=Skinny%20pop"><img src="https://cdn.jsdelivr.net/gh/kdeds/chipsPlease@main/snack-images/skinny-pop.png" alt="Skinny pop"></a>
+        <h3>Skinny pop</h3>
+      </div>
+      <div class="card">
+        <a href="/?foodName=Pocky"><img src="https://cdn.jsdelivr.net/gh/kdeds/chipsPlease@main/snack-images/pocky.png" alt="Pocky"></a>
+        <h3>Pocky</h3>
+      </div>
+      <div class="card">
+        <a href="/?foodName=Veggie%20straws"><img src="https://cdn.jsdelivr.net/gh/kdeds/chipsPlease@main/snack-images/veggie-straws.png" alt="Veggie straws"></a>
+        <h3>Veggie straws</h3>
+      </div>
+      <div class="card">
+        <a href="/?foodName=Z-bars"><img src="https://cdn.jsdelivr.net/gh/kdeds/chipsPlease@main/snack-images/z-bars.png" alt="Z-bars"></a>
+        <h3>Z-bars</h3>
+      </div>
+      <div class="card">
+        <a href="/?foodName=Ruffles%20%28sour%20cream%29"><img src="https://cdn.jsdelivr.net/gh/kdeds/chipsPlease@main/snack-images/ruffles-sour-cream.png"
+            alt="Ruffles (sour cream)"></a>
+        <h3>Ruffles (sour cream)</h3>
+      </div>
+      <div class="card">
+        <a href="/?foodName=Milk"><img src="https://cdn.jsdelivr.net/gh/kdeds/chipsPlease@main/images/milk.jpg" alt="Milk"></a>
+        <h3>Milk</h3>
+      </div>
+      <div class="card">
+        <a href="/?foodName=Beef%20jerky%20bites"><img src="https://cdn.jsdelivr.net/gh/kdeds/chipsPlease@main/snack-images/jacklinks-bites.png" alt="Beef jerky bites"></a>
+        <h3>Beef jerky bites</h3>
+      </div>
+      <div class="card">
+        <a href="/?foodName=Doritos%20%28nacho%20cheese%29"><img src="https://cdn.jsdelivr.net/gh/kdeds/chipsPlease@main/snack-images/doritos.png"
+            alt="Doritos (nacho cheese)"></a>
+        <h3>Doritos (nacho cheese)</h3>
+      </div>
+      <div class="card">
+        <a href="/?foodName=Teddy%20grahams%20%28chocolate%29"><img src="https://cdn.jsdelivr.net/gh/kdeds/chipsPlease@main/snack-images/teddy-grahams-chocolate.png"
+            alt="Teddy grahams (chocolate)"></a>
+        <h3>Teddy grahams (chocolate)</h3>
+      </div>
+      <div class="card">
+        <a href="/?foodName=Motts"><img src="https://cdn.jsdelivr.net/gh/kdeds/chipsPlease@main/snack-images/motts.png" alt="Motts"></a>
+        <h3>Motts</h3>
+      </div>
+      <div class="card">
+        <a href="/?foodName=Ritz%20stacks"><img src="https://cdn.jsdelivr.net/gh/kdeds/chipsPlease@main/snack-images/ritz-stacks.png" alt="Ritz stacks"></a>
+        <h3>Ritz stacks</h3>
+      </div>
+      <div class="card">
+        <a href="/?foodName=milk"><img src="https://cdn.jsdelivr.net/gh/kdeds/chipsPlease@main/images/milk.jpg" alt="milk"></a>
+        <h3>milk</h3>
+      </div>
+      <div class="card">
+        <a href="/?foodName=cereal"><img src="https://cdn.jsdelivr.net/gh/kdeds/chipsPlease@main/images/cereal.jpg" alt="cereal"></a>
+        <h3>cereal</h3>
+      </div>
+      <div class="card">
+        <a href="/?foodName=Go%20go%20squeez"><img src="https://cdn.jsdelivr.net/gh/kdeds/chipsPlease@main/snack-images/gogo-squeeze.png" alt="Go go squeez"></a>
+        <h3>Go go squeez</h3>
+      </div>
+      <div class="card">
+        <a href="/?foodName=Spaghetti%20sauce"><img src="https://cdn.jsdelivr.net/gh/kdeds/chipsPlease@main/images/spaghetti-sauce.jpg" alt="Spaghetti sauce"></a>
+        <h3>Spaghetti sauce</h3>
+      </div>
+      <div class="card">
+        <a href="/?foodName=Mac%20and%20cheese"><img src="https://cdn.jsdelivr.net/gh/kdeds/chipsPlease@main/images/mac-and-cheese.jpg" alt="Mac and cheese"></a>
+        <h3>Mac and cheese</h3>
+      </div>
+      <div class="card">
+        <a href="/?foodName=Candy"><img src="https://cdn.jsdelivr.net/gh/kdeds/chipsPlease@main/images/candy.jpg" alt="Candy"></a>
+        <h3>Candy</h3>
+      </div>
+      <div class="card">
+        <a href="/?foodName=Mozzarella"><img src="https://cdn.jsdelivr.net/gh/kdeds/chipsPlease@main/images/mozzarella.jpg" alt="Mozzarella"></a>
+        <h3>Mozzarella</h3>
+      </div>
+      <div class="card">
+        <a href="/?foodName=Bell%20pepper"><img src="https://cdn.jsdelivr.net/gh/kdeds/chipsPlease@main/images/bell-pepper.jpg" alt="Bell pepper"></a>
+        <h3>Bell pepper</h3>
+      </div>
+      <div class="card">
+        <a href="/?foodName=Fruit%20by%20the%20foot%20%28berry%29"><img src="https://cdn.jsdelivr.net/gh/kdeds/chipsPlease@main/snack-images/fruit-by-the-foot.png"
+            alt="Fruit by the foot (berry)"></a>
+        <h3>Fruit by the foot (berry)</h3>
+      </div>
+      <div class="card">
+        <a href="/?foodName=Graham%20crackers%20%28chocolate%29"><img src="https://cdn.jsdelivr.net/gh/kdeds/chipsPlease@main/snack-images/graham-crackers-chocolate.png"
+            alt="Graham crackers (chocolate)"></a>
+        <h3>Graham crackers (chocolate)</h3>
+      </div>
+      <div class="card">
+        <a href="/?foodName=Fit%20crunch%20bars%20%28ice%20cream%29"><img src="https://cdn.jsdelivr.net/gh/kdeds/chipsPlease@main/snack-images/fitcrunch.png"
+            alt="Fit crunch bars (ice cream)"></a>
+        <h3>Fit crunch bars (ice cream)</h3>
+      </div>
+      <div class="card">
+        <a href="/?foodName=Nut%20butter%20bar%20%28peanut%20butter%29"><img
+            src="https://cdn.jsdelivr.net/gh/kdeds/chipsPlease@main/snack-images/nut-butter-plain.png" alt="Nut butter bar (peanut butter)"></a>
+        <h3>Nut butter bar (peanut butter)</h3>
+      </div>
+      <div class="card">
+        <a href="/?foodName=Nut%20butter%20bar%20%28chocolate%29"><img src="https://cdn.jsdelivr.net/gh/kdeds/chipsPlease@main/snack-images/nut-butter-chocolate.png"
+            alt="Nut butter bar (chocolate)"></a>
+        <h3>Nut butter bar (chocolate)</h3>
+      </div>
+      <div class="card">
+        <a href="/?foodName=Graham%20crackers%20%28honey%29"><img src="https://cdn.jsdelivr.net/gh/kdeds/chipsPlease@main/snack-images/graham-crackers-honey.png"
+            alt="Graham crackers (honey)"></a>
+        <h3>Graham crackers (honey)</h3>
+      </div>
+      <div class="card">
+        <a href="/?foodName=Ritz%20bits"><img src="https://cdn.jsdelivr.net/gh/kdeds/chipsPlease@main/snack-images/ritz-bits-cheese.png" alt="Ritz bits"></a>
+        <h3>Ritz bits</h3>
+      </div>
+      <div class="card">
+        <a href="/?foodName=Goldfish%20%28rainbow%29"><img src="https://cdn.jsdelivr.net/gh/kdeds/chipsPlease@main/snack-images/goldfish-rainbow.png"
+            alt="Goldfish (rainbow)"></a>
+        <h3>Goldfish (rainbow)</h3>
+      </div>
+      <div class="card">
+        <a href="/?foodName=Ritz%20toasted%20chips"><img src="https://cdn.jsdelivr.net/gh/kdeds/chipsPlease@main/snack-images/ritz-toasted-chips.png"
+            alt="Ritz toasted chips"></a>
+        <h3>Ritz toasted chips</h3>
+      </div>
+      <div class="card">
+        <a href="/?foodName=Goldfish%20%28flavor%20blasted%29"><img src="https://cdn.jsdelivr.net/gh/kdeds/chipsPlease@main/snack-images/goldfish-flavor-blasted.png"
+            alt="Goldfish (flavor blasted)"></a>
+        <h3>Goldfish (flavor blasted)</h3>
+      </div>
+      <div class="card">
+        <a href="/?foodName=Veggie%20straws"><img src="https://cdn.jsdelivr.net/gh/kdeds/chipsPlease@main/snack-images/veggie-straws.png" alt="Veggie straws"></a>
+        <h3>Veggie straws</h3>
+      </div>
+      <div class="card">
+        <a href="/?foodName=Pringles%20%28sour%20cream%29"><img src="https://cdn.jsdelivr.net/gh/kdeds/chipsPlease@main/snack-images/pringles-sour-cream.png"
+            alt="Pringles (sour cream)"></a>
+        <h3>Pringles (sour cream)</h3>
+      </div>
+      <div class="card">
+        <a href="/?foodName=Cheddar%20rice%20cakes"><img src="https://cdn.jsdelivr.net/gh/kdeds/chipsPlease@main/snack-images/cheddar-rice-cakes.png"
+            alt="Cheddar rice cakes"></a>
+        <h3>Cheddar rice cakes</h3>
+      </div>
+      <div class="card">
+        <a href="/?foodName=Rice%20krispie%20treats"><img src="https://cdn.jsdelivr.net/gh/kdeds/chipsPlease@main/snack-images/rice-krispie-treats.png"
+            alt="Rice krispie treats"></a>
+        <h3>Rice krispie treats</h3>
+      </div>
+      <div class="card">
+        <a href="/?foodName=Ritz%20large%20sandiwches"><img src="https://cdn.jsdelivr.net/gh/kdeds/chipsPlease@main/snack-images/ritz-sandwiches-large.png"
+            alt="Ritz large sandiwches"></a>
+        <h3>Ritz large sandiwches</h3>
+      </div>
+      <div class="card">
+        <a href="/?foodName=Cheetos%20%28crunchy%29"><img src="https://cdn.jsdelivr.net/gh/kdeds/chipsPlease@main/snack-images/crunchy-cheetos.png" alt="Cheetos (crunchy)"></a>
+        <h3>Cheetos (crunchy)</h3>
+      </div>
+      <div class="card">
+        <a href="/?foodName=Protein%20Z-Bar%20%28cookies%20and%20creme%29"><img
+            src="https://cdn.jsdelivr.net/gh/kdeds/chipsPlease@main/snack-images/zbar-protein-cookies-and-creme.png" alt="Protein Z-Bar (cookies and creme)"></a>
+        <h3>Protein Z-Bar (cookies and creme)</h3>
+      </div>
+      <div class="card">
+        <a href="/?foodName=Mini%20nilla%20wafers"><img src="https://cdn.jsdelivr.net/gh/kdeds/chipsPlease@main/snack-images/mini-nilla-wafers.png" alt="Mini nilla wafers"></a>
+        <h3>Mini nilla wafers</h3>
+      </div>
+      <div class="card">
+        <a href="/?foodName=Gushers"><img src="https://cdn.jsdelivr.net/gh/kdeds/chipsPlease@main/snack-images/gushers.png" alt="Gushers"></a>
+        <h3>Gushers</h3>
+      </div>
+      <div class="card">
+        <a href="/?foodName=Ritz%20stacks"><img src="https://cdn.jsdelivr.net/gh/kdeds/chipsPlease@main/snack-images/ritz-stacks.png" alt="Ritz stacks"></a>
+        <h3>Ritz stacks</h3>
+      </div>
+      <div class="card">
+        <a href="/?foodName=milk"><img src="https://cdn.jsdelivr.net/gh/kdeds/chipsPlease@main/images/milk.jpg" alt="milk"></a>
+        <h3>Z-bars</h3>
+      </div>
+      <div class="card">
+        <a href="/?foodName=Doritos%20%28spicy%29"><img src="https://cdn.jsdelivr.net/gh/kdeds/chipsPlease@main/snack-images/spicy-doritos.png" alt="Doritos (spicy)"></a>
+        <h3>Doritos (spicy)</h3>
+      </div>
+      <div class="card">
+        <a href="/?foodName=Mini%20oreos"><img src="https://cdn.jsdelivr.net/gh/kdeds/chipsPlease@main/snack-images/oreo-minis.png" alt="Mini oreos"></a>
+        <h3>Mini oreos</h3>
+      </div>
+      <div class="card">
+        <a href="/?foodName=Bread"><img src="https://cdn.jsdelivr.net/gh/kdeds/chipsPlease@main/images/bread.jpg" alt="Bread"></a>
+        <h3>Bread</h3>
+      </div>
+      <div class="card">
+        <a href="/?foodName=Sprite"><img src="https://cdn.jsdelivr.net/gh/kdeds/chipsPlease@main/images/sprite.jpg" alt="Sprite"></a>
+        <h3>Sprite</h3>
+      </div>
+      <div class="card">
+        <a href="/?foodName=Lemonade"><img src="https://cdn.jsdelivr.net/gh/kdeds/chipsPlease@main/images/lemonade.jpg" alt="Lemonade"></a>
+        <h3>Lemonade</h3>
+      </div>
+      <div class="card">
+        <a href="/?foodName=Pizza%20rolls"><img src="https://cdn.jsdelivr.net/gh/kdeds/chipsPlease@main/images/pizza-rolls.jpg" alt="Pizza rolls"></a>
+        <h3>Pizza rolls</h3>
+      </div>
+      <div class="card">
+        <a href="/?foodName=Chili"><img src="https://cdn.jsdelivr.net/gh/kdeds/chipsPlease@main/images/chili.jpg" alt="Chili"></a>
+        <h3>Chili</h3>
+      </div>
+      <div class="card">
+        <a href="/?foodName=Easy%20mac"><img src="https://cdn.jsdelivr.net/gh/kdeds/chipsPlease@main/images/easy-mac.jpg" alt="Easy mac"></a>
+        <h3>Easy mac</h3>
+      </div>
+      <div class="card">
+        <a href="/?foodName=Natalie%20breakfast"><img src="https://cdn.jsdelivr.net/gh/kdeds/chipsPlease@main/images/natalie-breakfast.jpg" alt="Natalie breakfast"></a>
+        <h3>Natalie breakfast</h3>
+      </div>
+      <div class="card">
+        <a href="/?foodName=Kelly%20breakfast"><img src="https://cdn.jsdelivr.net/gh/kdeds/chipsPlease@main/images/kelly-breakfast.jpg" alt="Kelly breakfast"></a>
+        <h3>Kelly breakfast</h3>
+      </div>
+      <div class="card">
+        <a href="/?foodName=Mac%20and%20cheese%20%28box%29"><img src="https://cdn.jsdelivr.net/gh/kdeds/chipsPlease@main/images/mac-and-cheese-box.jpg"
+            alt="Mac and cheese (box)"></a>
+        <h3>Mac and cheese (box)</h3>
+      </div>
+      <div class="card">
+        <a href="/?foodName=Cheese"><img src="https://cdn.jsdelivr.net/gh/kdeds/chipsPlease@main/images/cheese.jpg" alt="Cheese"></a>
+        <h3>Cheese</h3>
+      </div>
+      <div class="card">
+        <a href="/?foodName=Pizza%20lunchables"><img src="https://cdn.jsdelivr.net/gh/kdeds/chipsPlease@main/images/pizza-lunchables.jpg" alt="Pizza lunchables"></a>
+        <h3>Pizza lunchables</h3>
+      </div>
+      <div class="card">
+        <a href="/?foodName=Strawberry%20jelly"><img src="https://cdn.jsdelivr.net/gh/kdeds/chipsPlease@main/images/strawberry-jelly.jpg" alt="Strawberry jelly"></a>
+        <h3>Strawberry jelly</h3>
+      </div>
+      <div class="card">
+        <a href="/?foodName=Nutella"><img src="https://cdn.jsdelivr.net/gh/kdeds/chipsPlease@main/images/nutella.jpg" alt="Nutella"></a>
+        <h3>Nutella</h3>
+      </div>
+      <div class="card">
+        <a href="/?foodName=Frozen%20chicken%20wings"><img src="https://cdn.jsdelivr.net/gh/kdeds/chipsPlease@main/images/frozen-chicken-wings.jpg"
+            alt="Frozen chicken wings"></a>
+        <h3>Frozen chicken wings</h3>
+      </div>
+      <div class="card">
+        <a href="/?foodName=Frozen%20chicken%20patties"><img src="https://cdn.jsdelivr.net/gh/kdeds/chipsPlease@main/images/frozen-chicken-patties.jpg"
+            alt="Frozen chicken patties"></a>
+        <h3>Frozen chicken patties</h3>
+      </div>
+      <div class="card">
+        <a href="/?foodName=Cat%20treats"><img src="https://cdn.jsdelivr.net/gh/kdeds/chipsPlease@main/images/cat-treats.jpg" alt="Cat treats"></a>
+        <h3>Cat treats</h3>
+      </div>
+    </div>
   </div>
 
-  <script src="https://raw.githubusercontent.com/kdeds/chipsPlease/main/app.js"></script>
+
+  <!-- <script src="https://cdn.jsdelivr.net/gh/kdeds/chipsPlease@latest/app.js"></script> -->
+  <script src="/app.js"></script>
 </body>
+
 </html>

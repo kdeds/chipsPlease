@@ -1,0 +1,12 @@
+{
+  "name": "chips-please",
+  "version": "1.0.0",
+  "description": "Chips Please - Food inventory system",
+  "scripts": {
+    "sass": "sass scss:css --watch",
+    "sass:build": "sass scss:css"
+  },
+  "dependencies": {
+    "sass": "^1.69.0"
+  }
+}
