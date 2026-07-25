@@ -4,33 +4,14 @@
   <meta charset="utf-8">
   <title>Chips Please!</title>
   <style>
-    body { font-family: sans-serif; text-align: center; padding: 50px; background: #1e1e24; color: #fff; }
-    .card { background: #2b2d42; padding: 30px; border-radius: 10px; display: inline-block; }
-    .tag { font-size: 2em; color: #4895ef; font-weight: bold; }
+
   </style>
 </head>
 <body>
-  <div class="card">
-    <h2>NFC Reader Status</h2>
-    <p>Last Tag Scanned:</p>
-    <div id="tag" class="tag">Waiting...</div>
-    <small>when you called me naive, did you mean to a fault?</small>
+  <div class="main">
+    <div class="result"></div>
   </div>
 
-  <script>
-    async function updateTag() {
-      try {
-        const res = await fetch('/api/tag');
-        const data = await res.json();
-        if (data.last_tag !== "NONE") {
-          document.getElementById('tag').innerText = data.last_tag;
-        }
-      } catch (e) {
-        console.error("API error", e);
-      }
-    }
-    // Poll the ESP32 every 500ms for fresh scans
-    setInterval(updateTag, 5000);
-  </script>
+  <script src="https://raw.githubusercontent.com/kdeds/chipsPlease/main/app.js"></script>
 </body>
 </html>
